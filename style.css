@@ -37,6 +37,7 @@ nav a {
   font-weight: 400;
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -44,6 +45,14 @@ nav a:hover {
   font-size: 17px;
 }
 
+nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(white);
+  transform: scale(0);
+  transition: 0.2s linear;
+}
 main {
   padding: 20px;
 
