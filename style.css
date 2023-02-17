@@ -23,13 +23,13 @@ nav {
 
 nav ul {
   padding-inline: 4rem;
-
   display: flex;
   gap: 2rem;
 }
 
 nav li {
   list-style-type: none;
+  margin-right: 20px;
 }
 
 nav a {
@@ -42,7 +42,6 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  font-size: 17px;
 }
 
 nav a::after {
@@ -55,14 +54,12 @@ nav a::after {
 }
 main {
   padding: 20px;
-
   display: flex;
   gap: 1.5rem;
 }
 
 #content {
   flex: 5;
-
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem 2rem;
@@ -101,9 +98,11 @@ footer {
 .featured-image {
   width: 100%;
   max-height: 300px;
-
   object-fit: cover;
   object-position: center;
+}
+.profile img {
+  width: 200px;
 }
 
 .card {
